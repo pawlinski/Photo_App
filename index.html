@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Photography App</title>
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/eric-meyer-reset.min.css">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <!-- Custom -->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Meera+Inimai" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,43 +24,53 @@
     <![endif]-->
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 visible-lg-block">
-            <nav>
-              <ul class="nav nav-pills" role="navigation">
-                <li role="presentation" class="active"><a href="#">Home</a></li>
-                <li role="presentation"><a href="#">Photo App</a></li>
-                <li role="presentation"><a href="#">Overview</a></li>
-                <li role="presentation"><a href="#">Download</a></li>
-              </ul>
-            </nav>
-          </div><!-- End Navigation -->
-        </div><!-- End row -->
-        <div class="row">
-          <div class="col-xs-12">
-            <h1>&ldquo;YOUR PHOTOGRAPHY IS A RECORD OF YOUR<br> LIVING, FOR ANYONE WHO REALLY SEES&rdquo;</h1>
-          </div>
-        </div><!-- End row -->
-        <div class="row">
-          <div class="col-xs-4"><span class="header-line"></span></div>
-          <div class="col-xs-4 header-title-small">
-            <p>printing your life in a simple photo</p>
-          </div>
-          <div class="col-xs-4"><span class="header-line"></span></div>
-        </div><!-- End row -->
-        <div class="row clear">
-          <div class="col-xs-12">
-            <a class="btn btn-default button-get-started" href="#" role="button">Get Started <span class="glyphicon glyphicon-chevron-right circle-button"></span></a>
-          </div>
+    <div class="header-container">
+      <header class="wrapper">
+        <nav>
+          <ol id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Photo App</a></li>
+            <li><i class="fa fa-camera fa-3x" aria-hidden="true"></i></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Download</a></li>
+          </ol>
+        </nav>
+
+        <h1 id="heading-main">&ldquo;YOUR PHOTOGRAPHY IS A RECORD OF YOURS <br>LIVING, FOR ANYONE WHO REALLY SEES&rdquo;</h1>
+
+        <div class="title">
+          <div class="title-line-left"></div>
+          <h5 class="title-main">print your life in a simple photo</h5>
+          <div class="title-line-right"></div>
         </div>
-      </div>
-    </header>
+
+        <button class="button-green" role="button">Get Started<i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i></button>
+
+        <ol id="social-header">
+          <li id="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+          <li id="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+          <li id="pinterest"><a href="#"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a></li>
+          <li id="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+        </ol>
+      </header> <!-- end header -->
+    </div> <!-- end header-container -->
+
+    <div class="main-container">
+      <div class="main wrapper">
+        
+      </div> <!-- end main -->
+    </div> <!-- end main-container -->
+
+    <div class="footer-container">
+      <footer class="wrapper">
+        
+      </footer> <!-- end footer -->
+    </div> <!-- end footer-wrapper -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- -prefix-free -->
+    <script src="js/prefixfree.min.js"></script>
   </body>
 </html>

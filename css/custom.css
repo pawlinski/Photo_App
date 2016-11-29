@@ -1,58 +1,155 @@
+/*wygląd elementu - body*/
 body {
-	font-family: 'Open Sans', sans-serif;
-}
-header {
-	height: 100%;
-    background: url(../img/background.jpg) no-repeat center center;
-    background-size: cover;
-    color: #EDEDED;
-    text-align: center;
-    padding: 15px 0;
-    position: relative;
+	font-family: 'Meera Inimai', sans-serif;
+	box-sizing: border-box;
 }
 
-header nav {
-	margin: 5em auto 18em auto; //wyśrodkowanie navigacji
-	// padding-top: 5em;
-	// padding-bottom: 18em;
-    display: table; //wyśrodkowanie navigacji
-    float: none; //wyśrodkowanie navigacji
+/*wygląd elementu - header.wrapper*/
+header.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0;
+	height: 745px;
+	background: url("../img/background.jpg") no-repeat;
 }
 
-.header-title-small {
-	font-size: 1.2em;
-	letter-spacing: 0.15em;
-	text-align: center;
+/*NAVBAR*/
+nav {
 	position: relative;
+	top: 90px;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0;
 }
 
-.header-line {
-	display: inline-block;
-    width: 100%;
-    height: 2px;
-    background-color: #EDEDED;
+
+/* MENU GÓRNE */
+/* wygląd elementu - ol */
+#menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	align-content: center;
+	list-style-type: none;
 }
 
-header a.btn.btn-default.button-get-started {
-	background-color: #16A085;
-	color: #fff;
-	border: 0;
-	border-radius: 0;
+/*wygląd elementów - li */
+#menu > li {
+	width: 20%;
+	text-align: center;
+}
+
+/* wygląd elementów - a */
+#menu > li > a {
+	text-decoration: none;
+	color: #EDEDED;
+}
+
+/* wygląd elementu - i (camera)*/
+#menu > li > i {
+	color: #EDEDED;
+}
+
+
+/* wygląd elementów - a - po najechaniu kursorem myszki na element - li */
+#menu > li:hover > a {
+	text-decoration: none;
+	border-bottom: 4px solid #5cb09f;
+}
+/* KONIEC MENU GÓRNE */
+
+/*#menu {
+	display: none;
+}*/
+
+/* HEADING + TITLE MAIN */
+
+#heading-main {
+	margin: 15px auto;
+	padding: 0;
+	margin-top: 425px;
+	text-align: center;
+	color: #FFF;
+}
+
+.title {
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	max-width: 900px;
+}
+
+.title-main {
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: #FFF;
+}
+
+.title-line-left, .title-line-right {
+	width: 300px;
+	border-top: 3px solid #fff;
+}
+
+/* KONIEC HEADING + TITLE MAIN */
+
+/* BUTTON HEADER */
+
+.button-green {
+	display: block;
+	position: relative;
 	width: 190px;
-	height: 57px;
-	font-size: 1.2em;
-	padding: 13px 25px 13px 15px;
+	height: 60px;
+	margin: 0 auto;
+	margin-top: 38px;
+	padding: 0;
+	padding-left: 20px;
+	border-width: 0;
+    border-style: none;
+    border-color: transparent;
+    border-image: none;
+    text-align: left;
+    font-size: 16px;
+	color: #FFF;
+	background-color: #16a085;
 }
 
-.circle-button {
-	font-size: 1.3em;
-	margin-left: 10px;
-	padding-top: 4px;
-	width: 32px;
-	height: 32px;
-	color: #16A085;
-	background-color: #fff;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+.button-green > i {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0 5px;
+	padding: 0;
+	padding-top: 5px;
+}
+
+/* KONIEC BUTTON HEADER */
+
+/* SOCIAL ICONS */
+
+#social-header {
+	max-width: 150px;
+	margin: 55px auto 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+#social-header > li > a {
+	color: #fff;
+}
+
+#social-header #twitter	{
+
+}
+
+
+
+
+/* KONIEC SOCIAL ICONS */
+
+@media (max-width: 767px) {
+	
 }
